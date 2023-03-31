@@ -1,0 +1,75 @@
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2JL7W0Q5n-wU.woff2)
+    format('woff2');}
+  @font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2JL7W0Q5n-wU.woff2)
+    format('woff2');}
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/montserrat/v25/JTUSjIg1_i6t8kCHKm459WRhyyTh89ZNpQ.woff2)
+    format('woff2');}
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/montserrat/v25/JTUSjIg1_i6t8kCHKm459WRhyyTh89ZNpQ.woff2)
+    format('woff2');}
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/montserrat/v25/JTUSjIg1_i6t8kCHKm459WRhyyTh89ZNpQ.woff2)
+    format('woff2');}
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/montserrat/v25/JTUSjIg1_i6t8kCHKm459WRhyyTh89ZNpQ.woff2)
+    format('woff2');}
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    inline-size: 100%;
+    max-width: 480px;
+    @media screen and (min-width: 768px) {
+      max-width: 760px;
+    }
+    @media screen and (min-width: 1280px) {
+      max-width: 1280px;
+    }
+  }
+  .section{
+    margin-left: 16px;
+    margin-right: 16px;
+    display: flex;
+    flex-direction: column;
+  }
+  @media screen and (min-width: 768px) {
+    .section{
+      margin-left: 24px;
+      margin-right: 24px;
+    }}
+    @media screen and (min-width: 1200px) {
+      .section{
+        margin-left: 24px;
+        margin-right: 24px;
+      }} 
+      body {
+        background-color: #ffffff;
+        color: #212121;
+      }
+      
