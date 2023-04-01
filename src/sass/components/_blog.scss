@@ -1,0 +1,21 @@
+.blog {
+  //0 -> max,
+  text-transform: uppercase;
+  color: get-color(brand_color-third);
+  border: solid;
+  text-align: center;
+  font-family: get-font(primary);
+
+  @include mq(phone) {
+    // 480px -> max,
+    color: get-color(brand_color-fourth);
+  }
+  @include mq(tablet) {
+    //768px -> max,
+    color: get-color(brand_color-fifth);
+  }
+  @include mq(desktop) {
+    //1280px -> max,
+    color: get-color(brand_color-sixth);
+  }
+}
