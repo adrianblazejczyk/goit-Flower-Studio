@@ -1,3 +1,81 @@
-.about{
-  color: aqua;
-}
+.about-head {
+  display: flex;
+  flex-direction: row;
+    
+  }
+  
+  .about-head__heading {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 100%;
+  color: #000000;
+  
+  
+  @include mq(tablet) {
+    
+      font-size: 44px;
+    }
+  }
+  @include mq(desktop) {
+    
+      font-size: 44px;
+    }
+  
+  
+  .about-head::after{
+      content: '';
+      position: absolute;
+      height: 1px;
+      width: calc(100% - 14px - 72px); // lenght 100% - space between - width header
+      top: 50%;
+      background: get-color(brand_color-second);
+      right: 0;}
+  .about-contents {
+    display: flex;
+    flex-direction: column;
+  
+  
+    @include mq(tablet) {
+     
+      flex-direction: row;
+      flex-wrap: nowrap;
+    }
+  
+  @include mq(desktop) {
+   
+      flex-direction: row;
+      flex-wrap: nowrap;
+    }
+  }
+  .about-contents__e {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    color: #000000;
+  
+    @include mq(tablet) {
+
+      font-size: 20px;
+    }
+  }
+  @include mq(desktop) {
+    
+      font-size: 22px;
+    }
+  
+  .about-contents__img{
+    width: 100%;
+    height: 178px;
+  
+    @include mq(tablet) {
+    
+     
+    height: 217px;
+    }
+  }
+  @include mq(desktop) {
+    
+     
+    height: 344px;
+    }
+  

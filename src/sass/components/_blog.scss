@@ -47,7 +47,7 @@
     &:last-child {
       display: none;
     }
-
+    
     @include mq(desktop) {
       &:last-child {
         display: block;
