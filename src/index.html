@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Anemone</title>
-    <!-- <link rel="icon" type="image/x-icon" href="./images/icons.svg#icon-logo-mobile" /> -->
+    <link rel="icon" type="image/x-icon" href="./images/favicon/logo_black.png" />
     <link rel="stylesheet" href="./css/modern-normalize.min.css" />
   </head>
   <body>
@@ -16,13 +16,15 @@
       <include src="./partials/delivery.html"></include>
       <include src="./partials/blog.html"></include>
       <include src="./partials/footer.html"></include>
-      <include src="./partials/menu-mobile.html"></include>
-      <include src="./partials/modal-order.html"></include>
-      <include src="./partials/modal-subscribe.html"></include>
-      <button class="btn">testowy</button>
     </div>
+    <include src="./partials/menu-mobile.html"></include>
+    <include src="./partials/modal-order.html"></include>
+    <include src="./partials/modal-subscribe.html"></include>
 
     <!-- Skrypt jest na samym dole kodu. On juz ma w sobie podłączony SAAS plik. -->
+
+    <script src="./js/model.js"></script>
+    <script defer src="./js/mobile-menu.js"></script>
     <script src="./index.js" type="module"></script>
   </body>
 </html>

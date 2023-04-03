@@ -1,3 +1,56 @@
 .about{
-  color: aqua;
-}
+  margin-bottom: 60px;
+  &__head {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  align-items: flex-start;
+  margin-bottom: 32px;
+  position: relative;
+
+    @include mq(tablet) {
+    font-size: 44px;
+    }
+  &::after{
+      content: '';
+      position: absolute;
+      height: 1px;
+      width: calc(100% - 14px - 91px); // lenght 100% - space between - width header
+      top: 15px;
+      background: get-color(brand_color-second);
+      right: 0;
+      @include mq(tablet) {
+        width: calc(100% - 16px - 166px);
+      }}}
+
+  &__contents {
+    display: flex;
+    flex-direction: column;
+    
+    @include mq(tablet) {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    }}
+ 
+  &__element{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    padding-bottom: 16px;
+    
+    @include mq(tablet) {
+    font-size: 20px;
+    line-height: 24px;
+    padding-right: 54px;
+    display: flex;
+    align-items: center;
+    }
+  
+    @include mq(desktop) {
+    font-size: 22px;
+    padding-right: 90px;
+    line-height: 27px;
+    }
+  }}
+  
+  
