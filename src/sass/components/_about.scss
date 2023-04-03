@@ -1,59 +1,56 @@
 .about{
-  margin-bottom: 100px;
-&__head {
+  margin-bottom: 60px;
+  &__head {
   font-weight: 700;
   font-size: 24px;
-  line-height: 100%;
+  line-height: 29px;
   align-items: flex-start;
   margin-bottom: 32px;
   position: relative;
-  
-  @include mq(tablet) {
-      font-size: 44px;
+
+    @include mq(tablet) {
+    font-size: 44px;
     }
-  }
-&::after{
+  &::after{
       content: '';
       position: absolute;
       height: 1px;
-      width: 183px; // lenght 100% - space between - width header
-      top: 30px;
+      width: calc(100% - 14px - 91px); // lenght 100% - space between - width header
+      top: 15px;
       background: get-color(brand_color-second);
-      left: 14px;
+      right: 0;
       @include mq(tablet) {
         width: calc(100% - 16px - 166px);
       }}}
 
-  .about__contents {
+  &__contents {
     display: flex;
     flex-direction: column;
-  
-  
+    
     @include mq(tablet) {
-     
-      flex-direction: row;
-      flex-wrap: nowrap;
+    flex-direction: row;
+    flex-wrap: nowrap;
     }}
  
-  .about__element{
+  &__element{
     font-weight: 400;
     font-size: 16px;
-    line-height: 100%;
-    margin-bottom: 16px;
-    margin-left: auto;
-    margin-right: auto;
-  
-    @include mq(tablet) {
-
-      font-size: 20px;
-      margin-right: 54px;
-    }
-  
-  @include mq(desktop) {
+    line-height: 20px;
+    padding-bottom: 16px;
     
-      font-size: 22px;
-      margin-right: 90px;
+    @include mq(tablet) {
+    font-size: 20px;
+    line-height: 24px;
+    padding-right: 54px;
+    display: flex;
+    align-items: center;
     }
-  }
+  
+    @include mq(desktop) {
+    font-size: 22px;
+    padding-right: 90px;
+    line-height: 27px;
+    }
+  }}
   
   
