@@ -7,9 +7,11 @@
   color: get-color(brand_color-second);
   @include mq(tablet) {
     font-size: 44px;
+    margin-bottom: 63px;
   }
   @include mq(desktop) {
     font-size: 44px;
+    margin-bottom: 103px;
   }
 }
 .d-head__heading::after {
@@ -20,15 +22,15 @@
   top: 50%;
   display: inline-block;
   border: 1px solid black;
+  @include mq(tablet) {
+    width: calc(100% - 16px - 231px);
+  }
 }
 .d-list {
   padding: 0;
   display: flex;
   flex-direction: column;
   row-gap: 14px;
-  @include mq(phone) {
-    row-gap: 14px;
-  }
   @include mq(tablet) {
     row-gap: 20px;
   }
@@ -39,7 +41,7 @@
 }
 .d-list__el--circle {
   box-sizing: border-box;
-  border: solid;
+  border: 1px solid;
   border-radius: 50%;
   min-width: 40px;
   height: 40px;
@@ -47,7 +49,6 @@
     width: 64px;
     height: 64px;
   }
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -57,6 +58,9 @@
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
+  @include mq(tablet) {
+    font-size: 26px;
+  }
 }
 .d-list__el--text {
   padding-left: 20px;
@@ -64,6 +68,14 @@
 }
 .d-img {
   width: 100%;
-  margin-top: 56px;
-  margin-bottom: 128px;
+  margin-top: 35px;
+  margin-bottom: 76px;
+  @include mq(tablet) {
+    margin-top: 56px;
+    margin-bottom: 128px;
+  }
+  @include mq(tablet) {
+    margin-top: 82px;
+    margin-bottom: 128px;
+  }
 }
