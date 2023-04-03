@@ -5,10 +5,10 @@
   align-items: center;
   width: 90vw;
   height: 178dvw;
-  margin-left: 16px;
-  margin-right: 16px;
+  margin-bottom: 60px;
 
   &__title-box {
+    text-transform: uppercase;
     position: relative;
     font-family: get-font(primary);
     font-size: 24px;
@@ -22,7 +22,7 @@
       content: '';
       position: absolute;
       height: 1px;
-      width: 80%;
+      width: 70%;
       top: 50%;
       background: get-color(brand_color-second);
       right: 0;
@@ -139,15 +139,19 @@
   .store {
     width: 93.75vw;
     height: 164vw;
-    margin-left: 24px;
-    margin-right: 24px;
+    margin-bottom: 100px;
     &__title-box {
       font-size: 28px;
       font-weight: 500;
       line-height: 1.16;
       &::after {
         content: '';
-        width: 80vw;
+        position: absolute;
+        height: 1px;
+        width: 80%;
+        top: 50%;
+        background: get-color(brand_color-second);
+        right: 0;
       }
     }
 
@@ -190,8 +194,8 @@
         content: '';
         position: absolute;
         height: 1px;
-        width: 40%;
-        top: 75%;
+        width: 38%;
+        top: 70%;
         background: get-color(brand_color-second);
         right: 0;
       }
@@ -217,12 +221,13 @@
   }
 }
 
-@include mq(desktop)  {
+@include mq(desktop) {
   .store {
     width: 96.25vw;
     height: 125vw;
 
     &__title-box {
+      text-transform: uppercase;
       position: relative;
       font-size: 44px;
       font-weight: 700;
@@ -231,7 +236,7 @@
         content: '';
         position: absolute;
         height: 1px;
-        width: 85%;
+        width: 82%;
         background: get-color(brand_color-second);
         right: 0;
       }
