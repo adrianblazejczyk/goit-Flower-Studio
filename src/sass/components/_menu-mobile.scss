@@ -1,6 +1,6 @@
 .menu-mobile {
   display: none;
-  display: flex;
+  //display: flex;
   flex-direction: column;
   background-color: get-color(brand_color-third);
   width: 100vw;
@@ -12,6 +12,8 @@
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
   &__exit {
+    border: none;
+    background-color: inherit;
     align-self: flex-end;
     margin-top: 22px;
     margin-right: 22px;
@@ -24,6 +26,7 @@
       stroke: get-color(brand_color-second);
     }
   }
+
   text-align: center;
   &__list {
     font-weight: 400;
