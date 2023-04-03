@@ -1,8 +1,8 @@
 .menu-mobile {
   display: none;
-  //display: flex;
+  display: flex;
   flex-direction: column;
-  background-color: #e86f54;
+  background-color: get-color(brand_color-third);
   width: 100vw;
   height: 100vh;
   position: absolute;
@@ -15,12 +15,13 @@
     align-self: flex-end;
     margin-top: 22px;
     margin-right: 22px;
-
+    stroke: get-color(brand_color-first);
     margin-bottom: 84px;
-    fill: get-color(brand_color-first);
+
     &:focus,
     &:hover {
-      //fill: get-color(brand_color-second);
+      cursor: pointer;
+      stroke: get-color(brand_color-second);
     }
   }
   text-align: center;
