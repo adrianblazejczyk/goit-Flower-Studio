@@ -1,0 +1,119 @@
+.banner__img {
+  width: 145px;
+  height: 274px;
+  float: center;
+  margin-left: 87px;
+
+  @include mq(tablet) {
+    width: 390px;
+    height: 636px;
+    margin-left: 189px;
+  }
+  @include mq(desktop) {
+    width: 390px;
+    height: 636px;
+    margin-left: 378px;
+  }
+}
+.banner__flex {
+  margin-top: 60px;
+  margin-bottom: 50px;
+  margin-left: 50px;
+  @include mq(tablet) {
+    margin-left: 0px;
+  }
+}
+.banner__h1 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 63px;
+  align-items: center;
+  width: 288px;
+  height: 63px;
+  margin-bottom: 100px;
+  margin-top: -90px;
+  margin-left: 65px;
+  margin-right: 16px;
+
+  @include mq(tablet) {
+    font-size: 120px;
+    line-height: 146px;
+    align-items: center;
+    margin-bottom: 200px;
+    margin-top: -110px;
+    margin-left: 55px;
+    margin-right: 55px;
+  }
+  @include mq(desktop) {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 160px;
+    line-height: 195px;
+    margin-bottom: 280px;
+    margin-top: -150px;
+    text-align: center;
+    margin-left: 201px;
+    margin-right: 202px;
+  }
+}
+.banner__item {
+  position: absolute;
+  width: 46px;
+  height: 34px;
+  margin-left: 27px;
+  margin-top: 120px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  @include mq(tablet) {
+    width: 101px;
+    height: 78px;
+    margin-left: 73px;
+    margin-top: 250px;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+  }
+  @include mq(desktop) {
+    width: 101px;
+    height: 78px;
+    margin-left: 234px;
+    top: 220px;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+    margin-right: 43px;
+    margin-top: 180px;
+  }
+}
+.banner__btn {
+  display: inline-flex;
+  border: none;
+  background: none;
+  margin-left: 1px;
+  margin-top: 100px;
+  cursor: pointer;
+  @include mq(tablet) {
+    margin-left: 25px;
+    margin-top: 230px;
+  }
+  @include mq(desktop) {
+    margin-left: 110px;
+    margin-top: 230px;
+  }
+}
+.banner__svg {
+  border: none;
+  position: absolute;
+  width: 76px;
+  height: 76px;
+  @include mq(tablet) {
+    width: 150px;
+    height: 150px;
+  }
+  @include mq(desktop) {
+    width: 166px;
+    height: 166px;
+  }
+}
