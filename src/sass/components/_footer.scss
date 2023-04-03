@@ -15,6 +15,7 @@ footer {
 }
 
 .footer {
+  display: flex;
   &__logo {
     display: none;
     &--icon {
@@ -54,6 +55,7 @@ footer {
     text-decoration: none;
   }
   @include mq(tablet) {
+    justify-content: space-between;
     &__social-media {
       &--first-item {
         margin-bottom: 18px;
@@ -61,7 +63,6 @@ footer {
     }
   }
   @include mq(desktop) {
-    display: flex;
     justify-content: space-between;
     &__logo {
       display: inline;
