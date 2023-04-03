@@ -1,1 +1,29 @@
-<p class="banner">banner</p>
+<section class="banner section" id="anemone">
+  <div class="banner__flex">
+    <div class="banner__item">flower studio</div>
+    <img
+      class="banner__img"
+      src="./images/hero/hero-desktop.jpg"
+      srcset="
+        ./images/hero/hero-mobile.jpg      145w,
+        ./images/hero//hero-tablet.jpg     390w,
+        ./images/hero/hero-desktop-2.jpg   390w,
+        ./images/hero/hero-mobile@2x.jpg   290w,
+        ./images/hero/hero-tablet@2x.jpg   780w,
+        ./images/hero/hero-desktop@2x.jpg 780npmw
+      "
+      sizes="(min-width: 1280px) 390px, (min-width: 768px) 390px, 145w"
+      alt="pink flower"
+    />
+      <button class="banner__btn" type="submit" data-modal-open>
+        <svg class="banner__svg">
+            <use href="./images/icons.svg#icon-mainbutton-dekstop"></use>
+          </svg></svg>
+      </button>
+   
+  </div>
+
+  <div>
+    <h1 class="banner__h1">ANEMONE</h1>
+  </div>
+</section>
