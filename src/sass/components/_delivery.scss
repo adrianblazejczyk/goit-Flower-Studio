@@ -1,16 +1,9 @@
-.d-head {
-  display: flex;
-  flex-direction: row;
-  gap: 14px;
-}
 .d-head__heading {
-  font-family: get-font(primary);
-  font-style: normal;
-  text-transform: uppercase;
+  position: relative;
   font-weight: 700;
   font-size: 24px;
   line-height: 1.2;
-  margin-left: 16px;
+  margin-bottom: 32px;
   color: get-color(brand_color-second);
   @include mq(tablet) {
     font-size: 44px;
@@ -19,70 +12,51 @@
     font-size: 44px;
   }
 }
-.d-head__sign {
+.d-head__heading::after {
   content: '';
-  position: relative;
-  width: 148px;
-  height: 0px;
-  margin-left: 14px;
-  margin-right: 16px;
-  border: 1px solid (brand_color-second);
-}
-.d-head__sign::after {
   position: absolute;
-  content: '';
+  height: 1px;
+  width: calc(100% - 14px - 126px);
+  top: 50%;
   display: inline-block;
   border: 1px solid black;
 }
 .d-list {
-  margin: 0;
   padding: 0;
-  list-style: none;
+  display: flex;
+  flex-direction: column;
+  row-gap: 14px;
   @include mq(tablet) {
-    font-size: 24px;
-  }
-  @include mq(desktop) {
-    font-size: 32px;
+    row-gap: 20px;
   }
 }
 .d-list__el {
-  position: relative;
-  padding-left: 1.5em;
-  margin-bottom: 0.5em;
-  line-height: 1.5;
-  font-family: get-font(primary);
+  display: flex;
+  align-items: center;
+}
+.d-list__el--circle {
+  box-sizing: border-box;
+  border: solid;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.d-list__el--point {
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 100%;
-  color: get-color(brand_color-second);
-  list-style: none;
+  font-size: 20px;
+  line-height: 1.2;
 }
-.d-list__el::before {
-  content: '';
-  display: inline-block;
-  gap: 8px;
-  position: absolute;
-  left: 0;
-  top: 0.15em;
-  width: 1em;
-  height: 1em;
-  border: 1px solid black;
-  border-radius: 50%;
-  text-align: center;
-  line-height: 1em;
-}
-.d-content {
-  display: flex;
-  flex-direction: column;
-  gap: 35px;
-  @include mq(tablet) {
-    gap: 56px;
-  }
-  @include mq(desktop) {
-    gap: 82px;
-  }
+.d-list__el--text {
+  padding-left: 20px;
+  margin-bottom: 14px;
 }
 .d-img {
   width: 100%;
+  margin-top: 56px;
+  margin-bottom: 128px;
 }
