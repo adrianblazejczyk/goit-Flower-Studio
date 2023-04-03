@@ -1,13 +1,3 @@
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
 footer {
   font-family: get-font(secendary), sans-serif;
   color: get-color(brand_color-first);
@@ -24,31 +14,7 @@ footer {
   }
 }
 
-.footer-menu {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 32px;
-  &__item {
-    flex-basis: calc((100% - 32px) / 2);
-  }
-  @include mq(tablet) {
-    flex-wrap: nowrap;
-
-    gap: 44px;
-    &__item {
-      flex-basis: calc((100% - 132px) / 4);
-    }
-  }
-  @include mq(desktop) {
-    flex-wrap: nowrap;
-    gap: 96px;
-    &__item {
-      flex-basis: calc((100% - 192px) / 3);
-    }
-  }
-}
-
-.footer-box {
+.footer {
   &__logo {
     display: none;
     &--icon {
@@ -56,50 +22,54 @@ footer {
       stroke: get-color(brand_color-first);
     }
   }
-  &__title {
-    line-height: 1.22;
-    margin-bottom: 18px;
-  }
-  &__sm-icon {
-    stroke: get-color(brand_color-first);
-  }
-  @include mq(desktop) {
-    &__logo {
-      display: inline;
+  &__social-media {
+    list-style-type: none;
+    padding: 0;
+    &--first-item {
+      margin-right: 14px;
+    }
+    &--icon {
+      stroke: get-color(brand_color-first);
     }
   }
-}
-
-.footer-content {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  &--sm {
-    flex-direction: row;
-    gap: 14px;
+  &__nav,
+  &__opening,
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
   }
-  &__item {
+  &--title {
+    line-height: 1.22;
+    margin-bottom: 6px;
+  }
+  &--text {
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.21;
   }
+  &--link {
+    color: inherit;
+    text-decoration: none;
+  }
   @include mq(tablet) {
-    &--sm {
-      flex-direction: column;
-      gap: 18px;
+    &__social-media {
+      &--first-item {
+        margin-bottom: 18px;
+      }
     }
   }
-  @include mq(desktop) {
-    &--sm {
-      flex-direction: column;
-      gap: 18px;
-    }
-  }
-}
-.footer {
   @include mq(desktop) {
     display: flex;
     justify-content: space-between;
+    &__logo {
+      display: inline;
+    }
+    &__social-media {
+      &--first-item {
+        margin-bottom: 18px;
+      }
+    }
   }
 }
