@@ -15,7 +15,6 @@ footer {
 }
 
 .footer {
-  display: flex;
   &__logo {
     display: none;
     &--icon {
@@ -26,7 +25,7 @@ footer {
   &__social-media {
     list-style-type: none;
     padding: 0;
-    &--first-item {
+    &--item:first-of-type {
       margin-right: 14px;
     }
     &--icon {
@@ -54,23 +53,61 @@ footer {
     color: inherit;
     text-decoration: none;
   }
-  @include mq(tablet) {
-    justify-content: space-between;
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    &__nav {
+      margin-bottom: 32px;
+    }
+    &__opening {
+      position: absolute;
+      top: 32px;
+      right: 16px;
+    }
     &__social-media {
-      &--first-item {
-        margin-bottom: 18px;
+      position: absolute;
+      top: 208px;
+      right: 74px;
+      &--item {
+        display: inline;
+        white-space: nowrap;
       }
     }
   }
+
+  @include mq(tablet) {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    &__social-media {
+      &--item:first-of-type {
+        margin-bottom: 18px;
+      }
+    }
+    &--title {
+      font-size: 20px;
+      line-height: 1.21;
+    }
+    &--text {
+      font-size: 16px;
+    }
+  }
   @include mq(desktop) {
+    display: flex;
+    flex-wrap: nowrap;
     justify-content: space-between;
     &__logo {
       display: inline;
     }
     &__social-media {
-      &--first-item {
+      &--first:first-of-type {
         margin-bottom: 18px;
       }
+    }
+    &--title {
+      font-size: 20px;
+      line-height: 1.21;
+    }
+    &--text {
+      font-size: 16px;
     }
   }
 }
