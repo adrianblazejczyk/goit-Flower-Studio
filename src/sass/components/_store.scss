@@ -135,7 +135,7 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@include mq(tablet) {
   .store {
     width: 93.75vw;
     height: 164vw;
@@ -217,7 +217,7 @@
   }
 }
 
-@media screen and (min-width: 1280px) {
+@include mq(desktop)  {
   .store {
     width: 96.25vw;
     height: 125vw;
