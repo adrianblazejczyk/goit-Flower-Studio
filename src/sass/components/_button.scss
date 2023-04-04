@@ -49,3 +49,27 @@
     height: 166px;
   }
 }
+.modal__btn {
+  background-color: #e86f54;
+  border-radius: 8px;
+  color: white;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  border: 0px;
+
+  @include mq(phone) {
+    width: 236px;
+    height: 37px;
+  }
+  @include mq(desktop) {
+    width: 336px;
+    height: 50px;
+  }
+  @include mq(tablet) {
+    width: 336px;
+    height: 50px;
+  }
+}
