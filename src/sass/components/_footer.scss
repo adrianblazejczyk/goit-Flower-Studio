@@ -73,6 +73,10 @@ footer {
       flex-basis: calc((100% - 32px) / 2);
       max-width: calc((100vh - 64px) / 2);
     }
+    &__contacts,
+    &__social-media {
+      margin-top: 32px;
+    }
   }
 
   @include mq(tablet) {
