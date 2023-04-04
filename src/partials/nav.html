@@ -8,19 +8,19 @@
     <nav>
       <ul class="menu">
         <li class="menu__anemone">
-          <a class="menu__link" id="“anemone”">Anemone</a>
+          <a class="menu__link" href="#anemone">Anemone</a>
         </li>
         <li class="menu__about-us">
-          <a class="menu__link" id="“about-us”">About us</a>
+          <a class="menu__link" href="#about-us">About us</a>
         </li>
         <li class="menu__store">
-          <a class="menu__link" id="“store”">Store</a>
+          <a class="menu__link" href="#store">Store</a>
         </li>
         <li class="menu__delivery">
-          <a class="menu__link" id="“delivery”">Delivery</a>
+          <a class="menu__link" href="#delivery">Delivery</a>
         </li>
         <li class="menu__blog">
-          <a class="menu__link" id="“blog”">Blog</a>
+          <a class="menu__link" href="#blog">Blog</a>
         </li>
       </ul>
     </nav>
@@ -33,7 +33,12 @@
         </a>
       </li>
       <li class="icon__list">
-        <button class="icon__button" type="button">
+        <button
+          class="icon__button menu-toggle js-open-menu header__mobile-menu-button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          type="button"
+        >
           <svg class="icon__burger">
             <use href="../src/images/icons.svg#icon-burger"></use>
           </svg>
