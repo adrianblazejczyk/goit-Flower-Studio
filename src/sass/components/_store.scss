@@ -7,6 +7,14 @@
   height: 569px;
   margin-bottom: 60px;
 
+  &__title {
+    font-family: get-font(primary);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 0.88;
+    text-align: left;
+  }
+
   &__title-box {
     text-transform: uppercase;
     position: relative;
@@ -22,7 +30,7 @@
       content: '';
       position: absolute;
       height: 1px;
-      width: 55%;
+      width: 70%;
       top: 50%;
       background: get-color(brand_color-second);
       right: 0;
@@ -138,6 +146,13 @@
   .store {
     width: 450px;
     margin-bottom: 60px;
+    &__title {
+      font-family: get-font(primary);
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 0.27px;
+      text-align: left;
+    }
     &__title-box {
       font-size: 28px;
       font-weight: 500;
@@ -146,7 +161,7 @@
         content: '';
         position: absolute;
         height: 1px;
-        width: 65%;
+        width: 80%;
         top: 50%;
         background: get-color(brand_color-second);
         right: 0;
@@ -159,6 +174,11 @@
     width: 720px;
     height: 1260px;
     margin-bottom: 100px;
+    &__title {
+      font-size: 44px;
+      font-weight: 700;
+      line-height: 54px;
+    }
     &__title-box {
       font-size: 28px;
       font-weight: 500;
@@ -254,7 +274,7 @@
         content: '';
         position: absolute;
         height: 1px;
-        width: 82%;
+        width: 86%;
         background: get-color(brand_color-second);
         right: 0;
       }
