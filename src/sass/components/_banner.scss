@@ -3,6 +3,7 @@
   height: 274px;
   margin-left: 60px;
   margin-right: 5px;
+  float: center;
   @include mq(phone) {
     float: center;
     margin-left: 140px;
@@ -19,9 +20,9 @@
   }
 }
 .banner__flex {
-  margin-top: 0px;
+  margin-top: 10px;
   margin-bottom: 50px;
-  margin-left: auto;
+  margin-left: 0px;
   @include mq(tablet) {
     margin-left: 0px;
   }
@@ -68,7 +69,8 @@
   position: absolute;
   width: 46px;
   height: 34px;
-  margin-left: 10px;
+  margin-left: auto;
+  margin-right: 0px;
   margin-top: 120px;
   font-weight: 400;
   font-size: 14px;
