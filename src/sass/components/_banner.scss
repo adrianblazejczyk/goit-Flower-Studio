@@ -3,8 +3,9 @@
   height: 274px;
   margin-left: 60px;
   margin-right: 5px;
+  align-content: center;
   @include mq(phone) {
-    float: center;
+    align-content: center;
     margin-left: 140px;
   }
   @include mq(tablet) {
@@ -19,9 +20,14 @@
   }
 }
 .banner__flex {
-  margin-top: 0px;
-  margin-bottom: 50px;
-  margin-left: auto;
+  margin-left: calc((100% - 46px - 145px - 76px) / 2);
+  @include mq(phone) {
+    margin-top: 0px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+  }
   @include mq(tablet) {
     margin-left: 0px;
   }
@@ -35,8 +41,8 @@
   width: 288px;
   height: 63px;
   margin-bottom: 30px;
-  margin-top: -90px;
-  margin-left: 8px;
+  margin-top: -40px;
+  margin-left: calc((100% - 288px) / 2);
   margin-right: 15px;
   @include mq(phone) {
     margin-bottom: 30px;
