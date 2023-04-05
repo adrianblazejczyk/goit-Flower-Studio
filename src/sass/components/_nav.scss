@@ -2,19 +2,22 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-left: 16px;
-  padding-top: 16px;
-  padding-right: 16px;
+  margin-left: 16px;
+  margin-top: 16px;
+  margin-right: 16px;
+  margin-bottom: 44px;
 
   @include mq(tablet) {
     //768px -> max,
-    padding-top: 24px;
+    margin-top: 24px;
+    margin-bottom: 38px;
   }
   @include mq(desktop) {
     //1280px -> max,
-    padding-left: 24px;
-    padding-top: 28px;
-    padding-right: 24px;
+    margin-left: 24px;
+    margin-top: 28px;
+    margin-right: 24px;
+    margin-bottom: 64px;
   }
 }
 .logo {
