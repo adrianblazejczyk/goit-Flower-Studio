@@ -3,6 +3,7 @@
   font-weight: 700;
   font-size: 24px;
   line-height: 1.2;
+  margin-top: 0px;
   margin-bottom: 32px;
   color: get-color(brand_color-second);
   @include mq(tablet) {
@@ -17,11 +18,11 @@
 .d-head__heading::after {
   content: '';
   position: absolute;
-  height: 1px;
+  height: 0px;
   width: calc(100% - 14px - 126px);
   top: 50%;
   display: inline-block;
-  border: 1px solid black;
+  border: 1px solid #000000;
   @include mq(tablet) {
     width: calc(100% - 16px - 231px);
   }
@@ -33,6 +34,9 @@
   row-gap: 14px;
   @include mq(tablet) {
     row-gap: 20px;
+  }
+  @include mq(desktop) {
+    margin-left: 72px;
   }
 }
 .d-list__el {
@@ -63,13 +67,18 @@
   }
 }
 .d-list__el--text {
-  padding-left: 20px;
+  padding-left: 8px;
   margin-bottom: 14px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.21;
+  @include mq(tablet) {
+    font-size: 24px;
+    padding-left: 20px;
+  }
   @include mq(desktop) {
     font-size: 32px;
+    padding-left: 56px;
   }
 }
 .d-img {
