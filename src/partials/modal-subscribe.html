@@ -1,46 +1,42 @@
 <section class="backdrop is-hidden" data-modal>
-    <div class="modal">
-      <button type="button" class="modal__close-button" data-modal-close>
-        &#x2715;
-      </button>
-      <div class="modal__img">
-        <picture>
-          <source
-            srcset="
-            ./images/modal-subscribe/modal-subscribe-desktop.jpg 1x
-            "
-            media="(min-width:1280px)"
-          />
-          <source
-            srcset="
-            ./images/modal-subscribe/modal-subscribe-tablet.jpg 1x
-            "
-            media="(min-width:768px)"
-          />
-          <source
-            srcset="
-            ./images/modal-subscribe/modal-subscribe-mobile.jpg 1x
-            "
-            media="(min-width:480px)"
-          />
-        <img
-          src="./images/modal-subscribe/modal-subscribe-desktop.jpg"
-          alt="red flower"
+  <div class="modal">
+    <button type="button" class="modal__close-button" data-modal-close>&#x2715;</button>
+    <div class="modal__img">
+      <picture>
+        <source
+          srcset="./images/modal-subscribe/modal-subscribe-desktop.jpg 1x"
+          media="(min-width:1280px)"
         />
+        <source
+          srcset="./images/modal-subscribe/modal-subscribe-tablet.jpg 1x"
+          media="(min-width:768px)"
+        />
+        <source
+          srcset="./images/modal-subscribe/modal-subscribe-mobile.jpg 1x"
+          media="(min-width:480px)"
+        />
+        <img src="./images/modal-subscribe/modal-subscribe-desktop.jpg" alt="red flower" />
       </picture>
-      </div>     
-      <div class="modal__text">
+    </div>
+    <div class="modal__text">
       <h3>Follow to our newsletter</h3>
-      <p>Be the first  to get exclusive offers and the latest  news on our product directly in your box.</p>
+      <p>
+        Be the first to get exclusive offers and the latest news on our product directly in your
+        box.
+      </p>
       <form class="form-modal">
-        <label class="form-modal__label">
-          <p class="form-modal__label-text">Email</p>
-          <div class="form-modal__input">
-          <input type="email" class="form-modal__text" name="email" placeholder="Your Email">
-          </div>
+
+        <p class="form-modal__label-text form-modal__label-text--left_bottom">Email</p>
+        <label class="form-modal__label form-modal__label-text">
+          <input
+            type="email"
+            class="form-modal__input form-modal__text"
+            name="email"
+            placeholder="Your Email"
+          />
         </label>
-        <button type="submit" class="modal__btn">subscribe</button>
+        <button type="submit" class="modal__btn form-modal__btn">subscribe</button>
       </form>
     </div>
-    </div>
+  </div>
 </section>
