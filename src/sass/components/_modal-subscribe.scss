@@ -27,11 +27,11 @@
   transform: translate(-50%, -50%);
   border-radius: 4px;
 
-  @include mq(phone) {
+  
     display: block;
     width: 272px;
     height: 380px;
-  }
+  
   @include mq(tablet) {
     display: block;
     width: 588px;
@@ -73,9 +73,9 @@
   display: flex;
   justify-content: center;
 
-  @include mq(phone) {
+  
     flex-direction: column;
-  }
+  
   @include mq(tablet) {
     flex-direction: column;
   }
@@ -94,9 +94,9 @@
     text-align: center;
     margin-top: 28px;
 
-    @include mq(phone) {
+   
       font-size: 19px;
-    }
+    
     @include mq(desktop) {
       margin-bottom: 30px;
       font-size: 28px;
@@ -118,9 +118,9 @@
     margin-right: 50px;
     margin-bottom: 8px;
 
-    @include mq(phone) {
+    
       font-size: 12px;
-    }
+    
     @include mq(desktop) {
       font-size: 16px;
       margin-bottom: 24px;
@@ -141,10 +141,10 @@
   text-align: center;
   align-items: center;
 
-  @include mq(phone) {
+  
     width: 236px;
     height: 37px;
-  }
+  
   @include mq(desktop) {
     width: 336px;
     height: 50px;
@@ -163,12 +163,12 @@
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 
-  @include mq(phone) {
+  
     font-size: 12px;
     width: 236px;
     height: 37px;
     margin-bottom: 10px;
-  }
+  
   @include mq(desktop) {
     width: 336px;
     height: 50px;
@@ -185,10 +185,10 @@
 .form-modal__text {
   //border: 1px;
 
-  @include mq(phone) {
+  
     width: 230px;
     height: 33px;
-  }
+  
   @include mq(desktop) {
     width: 330px;
     height: 48px;
@@ -209,9 +209,9 @@
   text-align: left;
   margin-right: 290px;
 
-  @include mq(phone) {
+  
     font-size: 12px;
-  }
+ 
   @include mq(desktop) {
     font-size: 16px;
   }
