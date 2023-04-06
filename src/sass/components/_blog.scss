@@ -45,12 +45,10 @@
       display: none;
     }
     @include mq(phone) {
-      width: calc((100% - 48px) / 2);
-      height: calc(((100% - 48px) / 2) * 1.33);
+      width: 216px;
+      height: 288px;
     }
     @include mq(tablet) {
-      //width: calc((100% - 80px) / 2);
-      //height: calc(((100% - 80px) / 2) * 1.33);
       width: 344px;
       height: 398px;
     }
