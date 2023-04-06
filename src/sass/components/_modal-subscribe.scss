@@ -21,7 +21,7 @@
   background-color: white;
   color: black;
   position: absolute;
-  
+
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -55,10 +55,8 @@
   border: 0;
 
   @include mq(phone) {
-    
   }
   @include mq(tablet) {
-    
   }
   @include mq(desktop) {
     background-color: white;
@@ -69,8 +67,6 @@
   display: flex;
   background-color: white;
   justify-content: center;
-
-  
 }
 .modal__text {
   align-items: center;
@@ -96,6 +92,7 @@
     font-weight: 600;
     line-height: 34px;
     text-align: center;
+    margin-top: 28px;
 
     @include mq(phone) {
       font-size: 19px;
@@ -108,7 +105,6 @@
       font-size: 28px;
       margin-bottom: 24px;
     }
-    
   }
 
   p {
@@ -117,9 +113,10 @@
     font-style: normal;
     font-weight: 400;
     line-height: 130%;
-    color: #5C5C5C;
+    color: #5c5c5c;
     margin-left: 50px;
     margin-right: 50px;
+    margin-bottom: 8px;
 
     @include mq(phone) {
       font-size: 12px;
@@ -130,16 +127,20 @@
     }
     @include mq(tablet) {
       font-size: 16px;
-      margin-bottom: 24px;
+      margin-bottom: 32px;
       max-width: 336px;
     }
   }
 }
-
+.form-modal__label-text.form-modal__label-text--left_bottom {
+  margin-left: 0px;
+  text-align: left;
+  margin-bottom: 8px;
+}
 .form-modal {
   text-align: center;
-  align-items: center; 
-  
+  align-items: center;
+
   @include mq(phone) {
     width: 236px;
     height: 37px;
@@ -155,11 +156,10 @@
 }
 
 .form-modal__text:focus-within {
-  outline: none;
+  //outline: none;
 }
 
 .form-modal__input {
-  
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 
@@ -180,12 +180,10 @@
     margin-bottom: 10px;
     font-size: 16px;
   }
-
 }
 
 .form-modal__text {
-  border: 0;
-  
+  //border: 1px;
 
   @include mq(phone) {
     width: 230px;
@@ -201,12 +199,14 @@
   }
 }
 .form-modal__label-text {
+  align-self: flex-start;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
   line-height: 12px;
-  color: #5C5C5C;
-  border: 0;
+  color: #5c5c5c;
+  border: 1;
+  text-align: left;
   margin-right: 290px;
 
   @include mq(phone) {
@@ -219,4 +219,9 @@
     font-size: 16px;
   }
 }
-
+.form-modal__btn {
+  margin-top: 18px;
+  @include mq(tablet) {
+    margin-top: 28px;
+  }
+}
