@@ -33,25 +33,35 @@
     text-align: center;
     display: flex;
     justify-content: space-between;
-    @include mq(phone) {
-      justify-content: space-around;
-    }
-    @include mq(tablet) {
-      justify-content: space-between;
-    }
     @include mq(desktop) {
       margin-bottom: 16px;
     }
   }
   &__img {
+    width: calc((100vw - 48px) / 2);
+    height: calc(((100vw - 48px) / 2) * 1.33);
+
     &:last-child {
       display: none;
     }
-
+    @include mq(phone) {
+      width: calc((100% - 48px) / 2);
+      height: calc(((100% - 48px) / 2) * 1.33);
+    }
+    @include mq(tablet) {
+      //width: calc((100% - 80px) / 2);
+      //height: calc(((100% - 80px) / 2) * 1.33);
+      width: 344px;
+      height: 398px;
+    }
     @include mq(desktop) {
       &:last-child {
         display: block;
       }
+      //width: calc((100% - 110px) / 3);
+      //height: calc(((100% - 110px) / 3) * 1.33);
+      width: 390px;
+      height: 421px;
     }
   }
   &__slider-btns {
