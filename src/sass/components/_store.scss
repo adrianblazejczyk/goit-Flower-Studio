@@ -8,7 +8,6 @@
   margin-bottom: 60px;
 
   &__title {
-    font-family: get-font(primary);
     font-size: 24px;
     font-weight: 700;
     line-height: 0.88;
@@ -18,11 +17,6 @@
   &__title-box {
     text-transform: uppercase;
     position: relative;
-    font-family: get-font(primary);
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 0.88;
-    text-align: left;
     width: 100%;
     height: auto;
     display: block;
@@ -30,7 +24,7 @@
       content: '';
       position: absolute;
       height: 1px;
-      width: 70%;
+      width: calc(100% - 84px - 14px);
       top: 50%;
       background: get-color(brand_color-second);
       right: 0;
@@ -60,7 +54,7 @@
     justify-content: space-between;
     align-items: center;
     width: 47%;
-    height: 46%;
+    height: 208px;
     overflow: hidden;
     &:nth-child(1),
     &:nth-child(3) {
@@ -77,7 +71,7 @@
     justify-content: center;
     height: auto;
     width: 100%;
-    height: 74.5%;
+    height: 155px;
     max-height: auto;
   }
 
@@ -96,11 +90,10 @@
     width: auto;
     display: flex;
     align-items: flex-end;
-    font-family: get-font(primary);
     height: 50%;
     font-size: 16px;
     font-weight: 500;
-    line-height: 0.8;
+    line-height: 20px;
     color: #000000;
   }
 
@@ -108,11 +101,10 @@
     width: auto;
     display: flex;
     align-items: flex-end;
-    font-family: get-font(primary);
     height: 50%;
     font-size: 12px;
     font-weight: 600;
-    line-height: 0.8;
+    line-height: 15px;
     color: rgba(0, 0, 0, 0.6);
   }
 }
@@ -144,10 +136,9 @@
 }
 @include mq(phone) {
   .store {
-    width: 450px;
+    width: 100%;
     margin-bottom: 60px;
     &__title {
-      font-family: get-font(primary);
       font-size: 24px;
       font-weight: 700;
       line-height: 0.27px;
@@ -161,7 +152,7 @@
         content: '';
         position: absolute;
         height: 1px;
-        width: 80%;
+        width: calc(100% - 84px - 14px);
         top: 50%;
         background: get-color(brand_color-second);
         right: 0;
@@ -171,7 +162,7 @@
 }
 @include mq(tablet) {
   .store {
-    width: 720px;
+    width: 100%;
     height: 1260px;
     margin-bottom: 100px;
     &__title {
@@ -187,7 +178,7 @@
         content: '';
         position: absolute;
         height: 1px;
-        width: 80%;
+        width: calc(100% - 16px - 154px);
         top: 50%;
         background: get-color(brand_color-second);
         right: 0;
@@ -200,10 +191,11 @@
     }
 
     &__card {
-      width: 47%;
+      width: 46%;
+      height: 491px;
       &:nth-child(1),
       &:nth-child(3) {
-        margin-right: 4.4%w;
+        margin-right: 32px;
       }
       &:nth-child(1),
       &:nth-child(2) {
@@ -213,7 +205,7 @@
 
     &__image {
       width: 100%;
-      height: 81%;
+      height: 399px;
     }
     &__img-file {
       width: 100%;
@@ -227,14 +219,43 @@
     &__caption-title {
       position: relative;
       font-size: 32px;
+      line-height: 39px;
+      letter-spacing: 0em;
       font-weight: 500;
-      line-height: 0.82;
-      &::after {
+
+      &.first::after {
         content: '';
         position: absolute;
         height: 1px;
-        width: 38%;
-        top: 70%;
+        width: calc(100% - 8px - 197px);
+        top: 60%;
+        background: get-color(brand_color-second);
+        right: 0;
+      }
+      &.second::after {
+        content: '';
+        position: absolute;
+        height: 1px;
+        width: calc(100% - 8px - 236px);
+        top: 60%;
+        background: get-color(brand_color-second);
+        right: 0;
+      }
+      &.third::after {
+        content: '';
+        position: absolute;
+        height: 1px;
+        width: calc(100% - 8px - 245px);
+        top: 60%;
+        background: get-color(brand_color-second);
+        right: 0;
+      }
+      &.fourth::after {
+        content: '';
+        position: absolute;
+        height: 1px;
+        width: calc(100% - 8px - 234px);
+        top: 60%;
         background: get-color(brand_color-second);
         right: 0;
       }
@@ -242,28 +263,30 @@
 
     &__caption-text {
       font-size: 24px;
-      line-height: 0.83;
+      font-weight: 600;
+      line-height: 29px;
     }
   }
-}
-.btn {
-  width: 280px;
-  height: 64px;
-  font-size: 28px;
-  line-height: 1.16;
-  &:hover {
-    background-color: #e25b41;
-  }
-  &:focus {
-    background-color: #fa6f54;
-    box-shadow: 0px 4px 16px rgba(250, 111, 84, 0.2);
+  .btn {
+    width: 280px;
+    height: 64px;
+    font-size: 28px;
+    line-height: 1.16;
+    &:hover {
+      background-color: #e25b41;
+    }
+    &:focus {
+      background-color: #fa6f54;
+      box-shadow: 0px 4px 16px rgba(250, 111, 84, 0.2);
+    }
   }
 }
 
 @include mq(desktop) {
   .store {
-    width: 1232px;
+    width: 100%;
     height: 1602px;
+    margin-bottom: 100px;
     &__title-box {
       text-transform: uppercase;
       position: relative;
@@ -274,7 +297,7 @@
         content: '';
         position: absolute;
         height: 1px;
-        width: 86%;
+        width: calc(100% - 16px - 154px);
         background: get-color(brand_color-second);
         right: 0;
       }
@@ -312,13 +335,41 @@
 
     &__caption-title {
       font-size: 36px;
-      line-height: 0.82;
-      &::after {
+      line-height: 44px;
+
+      &.first::after {
         content: '';
         position: absolute;
         height: 1px;
-        width: 60%;
-        top: 75%;
+        width: calc(100% - 16px - 214px);
+        top: 60%;
+        background: get-color(brand_color-second);
+        right: 0;
+      }
+      &.second::after {
+        content: '';
+        position: absolute;
+        height: 1px;
+        width: calc(100% - 16px - 256px);
+        top: 60%;
+        background: get-color(brand_color-second);
+        right: 0;
+      }
+      &.third::after {
+        content: '';
+        position: absolute;
+        height: 1px;
+        width: calc(100% - 16px - 268px);
+        top: 60%;
+        background: get-color(brand_color-second);
+        right: 0;
+      }
+      &.fourth::after {
+        content: '';
+        position: absolute;
+        height: 1px;
+        width: calc(100% - 16px - 255px);
+        top: 60%;
         background: get-color(brand_color-second);
         right: 0;
       }
@@ -327,7 +378,7 @@
     &__caption-text {
       font-size: 28px;
       font-weight: 600;
-      line-height: 0.82;
+      line-height: 34px;
     }
   }
 }
