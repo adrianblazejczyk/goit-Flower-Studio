@@ -1,3 +1,13 @@
+@mixin decorative-line-width($gap, $text-width) {
+  content: '';
+  position: absolute;
+  height: 1px;
+  width: calc(100% - $text-width - $gap);
+  top: 60%;
+  background: get-color(brand_color-second);
+  right: 0;
+}
+
 .store {
   display: flex;
   flex-direction: column;
@@ -10,7 +20,7 @@
   &__title {
     font-size: 24px;
     font-weight: 700;
-    line-height: 0.88;
+    line-height: 27px;
     text-align: left;
   }
 
@@ -21,13 +31,7 @@
     height: auto;
     display: block;
     &::after {
-      content: '';
-      position: absolute;
-      height: 1px;
-      width: calc(100% - 84px - 14px);
-      top: 50%;
-      background: get-color(brand_color-second);
-      right: 0;
+      @include decorative-line-width(14px, 84px);
     }
   }
 
@@ -137,57 +141,32 @@
 @include mq(phone) {
   .store {
     width: 100%;
-    margin-bottom: 60px;
-    &__title {
-      font-size: 24px;
-      font-weight: 700;
-      line-height: 0.27px;
-      text-align: left;
-    }
     &__title-box {
       font-size: 28px;
       font-weight: 500;
       line-height: 1.16;
       &::after {
-        content: '';
-        position: absolute;
-        height: 1px;
-        width: calc(100% - 84px - 14px);
-        top: 50%;
-        background: get-color(brand_color-second);
-        right: 0;
+        @include decorative-line-width(14px, 84px);
       }
     }
   }
 }
 @include mq(tablet) {
   .store {
-    width: 100%;
     height: 1260px;
     margin-bottom: 100px;
     &__title {
       font-size: 44px;
-      font-weight: 700;
       line-height: 54px;
     }
     &__title-box {
-      font-size: 28px;
-      font-weight: 500;
-      line-height: 1.16;
       &::after {
-        content: '';
-        position: absolute;
-        height: 1px;
-        width: calc(100% - 16px - 154px);
-        top: 50%;
-        background: get-color(brand_color-second);
-        right: 0;
+        @include decorative-line-width(16px, 154px);
       }
     }
 
     &__image-box {
       height: 81%;
-      width: 100%;
     }
 
     &__card {
@@ -204,14 +183,7 @@
     }
 
     &__image {
-      width: 100%;
       height: 399px;
-    }
-    &__img-file {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
     }
 
     &__caption {
@@ -219,53 +191,27 @@
     }
 
     &__caption-title {
-      position: relative;
       font-size: 32px;
       line-height: 39px;
       letter-spacing: 0em;
       font-weight: 500;
 
       &--first::after {
-        content: '';
-        position: absolute;
-        height: 1px;
-        width: calc(100% - 8px - 197px);
-        top: 60%;
-        background: get-color(brand_color-second);
-        right: 0;
+        @include decorative-line-width(8px, 197px);
       }
       &--second::after {
-        content: '';
-        position: absolute;
-        height: 1px;
-        width: calc(100% - 8px - 236px);
-        top: 60%;
-        background: get-color(brand_color-second);
-        right: 0;
+        @include decorative-line-width(8px, 236px);
       }
       &--third::after {
-        content: '';
-        position: absolute;
-        height: 1px;
-        width: calc(100% - 8px - 245px);
-        top: 60%;
-        background: get-color(brand_color-second);
-        right: 0;
+        @include decorative-line-width(8px, 245px);
       }
       &--fourth::after {
-        content: '';
-        position: absolute;
-        height: 1px;
-        width: calc(100% - 8px - 234px);
-        top: 60%;
-        background: get-color(brand_color-second);
-        right: 0;
+        @include decorative-line-width(8px, 235px);
       }
     }
 
     &__caption-text {
       font-size: 24px;
-      font-weight: 600;
       line-height: 29px;
     }
   }
@@ -288,104 +234,63 @@
   .store {
     width: 100%;
     height: 1602px;
-    margin-bottom: 100px;
     &__title-box {
-      text-transform: uppercase;
-      position: relative;
       font-size: 44px;
       font-weight: 700;
       line-height: 0.81;
       &::after {
-        content: '';
-        position: absolute;
-        height: 1px;
-        width: calc(100% - 16px - 154px);
-        background: get-color(brand_color-second);
-        right: 0;
+        @include decorative-line-width(16px, 154px);
       }
-    }
 
-    &__image-box {
-      height: 83.9%;
-    }
-
-    &__card:nth-child(1),
-    &__card:nth-child(3) {
-      margin-right: 2.6%;
-    }
-
-    &__card:nth-child(1),
-    &__card:nth-child(2) {
-      margin-bottom: 4.8%;
-    }
-
-    &__card {
-      width: 48.7%;
-      min-height: 47.6%;
-    }
-
-    &__image {
-      width: 100%;
-      height: 542px;
-    }
-
-    &__img-file {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    &__caption {
-      height: 15.3%;
-    }
-
-    &__caption-title {
-      font-size: 36px;
-      line-height: 44px;
-
-      &--first::after {
-        content: '';
-        position: absolute;
-        height: 1px;
-        width: calc(100% - 16px - 214px);
-        top: 60%;
-        background: get-color(brand_color-second);
-        right: 0;
+      &__image-box {
+        height: 83.9%;
       }
-      &--second::after {
-        content: '';
-        position: absolute;
-        height: 1px;
-        width: calc(100% - 16px - 256px);
-        top: 60%;
-        background: get-color(brand_color-second);
-        right: 0;
-      }
-      &--third::after {
-        content: '';
-        position: absolute;
-        height: 1px;
-        width: calc(100% - 16px - 268px);
-        top: 60%;
-        background: get-color(brand_color-second);
-        right: 0;
-      }
-      &--fourth::after {
-        content: '';
-        position: absolute;
-        height: 1px;
-        width: calc(100% - 16px - 255px);
-        top: 60%;
-        background: get-color(brand_color-second);
-        right: 0;
-      }
-    }
 
-    &__caption-text {
-      font-size: 28px;
-      font-weight: 600;
-      line-height: 34px;
+      &__card:nth-child(1),
+      &__card:nth-child(3) {
+        margin-right: 2.6%;
+      }
+
+      &__card:nth-child(1),
+      &__card:nth-child(2) {
+        margin-bottom: 4.8%;
+      }
+
+      &__card {
+        width: 48.7%;
+        height: 47.6%;
+      }
+
+      &__image {
+        height: 542px;
+      }
+
+      &__caption {
+        height: 15.3%;
+      }
+
+      &__caption-title {
+        font-size: 36px;
+        line-height: 44px;
+
+        &--first::after {
+          @include decorative-line-width(16px, 214px);
+        }
+        &--second::after {
+          @include decorative-line-width(16px, 256px);
+        }
+        &--third::after {
+          @include decorative-line-width(16px, 268px);
+        }
+        &--fourth::after {
+          @include decorative-line-width(16px, 154px);
+        }
+      }
+
+      &__caption-text {
+        font-size: 28px;
+        line-height: 34px;
+      }
     }
   }
 }
